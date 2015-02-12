@@ -1,0 +1,30 @@
+{
+  "name": "nomster-web",
+  "version": "0.0.0",
+  "authors": [
+    "tobias.scholze"
+  ],
+  "description": "Web client for the nomster ecosystem",
+  "keywords": [
+    "nomster",
+    "food",
+    "planner"
+  ],
+  "license": "MIT",
+  "homepage": "http://tscholze.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "core-icon-button": "Polymer/core-icon-button#^0.5.0",
+    "font-roboto": "Polymer/font-roboto#^0.5.0",
+    "core-header-panel": "Polymer/core-header-panel#^0.5.0",
+    "core-toolbar": "Polymer/core-toolbar#^0.5.0",
+    "paper-tabs": "Polymer/paper-tabs#^0.5.0",
+    "core-ajax": "Polymer/core-ajax#^0.5.0"
+  }
+}

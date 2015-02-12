@@ -1,0 +1,66 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
+
+<polymer-element name="post-card">
+  <template>
+    <style>
+    :host 
+    {
+      display: block;
+      position: relative;
+      background-color: white;
+      padding: 20px;
+      width: 100%;
+      min-width: 450px;
+      font-weight: 300;
+    }
+    
+    polyfill-next-selector 
+    { 
+    	content: '.card-header h1'; 
+    }
+    
+    .card-header ::content h1 
+    {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 300;
+      padding-top: 30px;
+    }
+    
+    polyfill-next-selector 
+    { 
+    	content: '.card-header img'; 
+    }
+    
+    .card-header ::content img 
+    {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 1px solid #999;
+      margin-right: 10px;
+    }
+    
+    .card-content p
+    {
+    	font-size: 0.8rem;
+    }
+    
+    </style>
+    
+    <div class="card-header" layout horizontal>
+      <content select="img"></content>
+      <content select="h1"></content>
+    </div>
+    
+    <div class="card-content" horizontal layout>		    
+    	<content select="p"></content>
+    </div>
+    
+  </template>
+  
+  <script>
+  	Polymer({});
+  </script>
+</polymer-element>
